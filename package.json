@@ -10,13 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@graphql-codegen/cli": "^5.0.0",
     "@graphql-codegen/visitor-plugin-common": "^4.1.1",
-    "graphql": "^16.8.1"
+    "tslib": "~1.11.1"
   },
   "devDependencies": {
     "@apollo/server": "^4.10.0",
     "@as-integrations/koa": "^1.1.1",
+    "@graphql-codegen/cli": "^5.0.2",
     "@graphql-tools/schema": "^10.0.2",
     "@koa/cors": "^5.0.0",
     "@types/koa__cors": "^5.0.0",
@@ -34,5 +34,8 @@
     "typescript": "^5.3.3",
     "ws": "^8.16.0",
     "zx": "^7.2.3"
+  },
+  "peerDependencies": {
+    "graphql": "^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0"
   }
 }
