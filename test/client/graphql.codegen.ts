@@ -1,4 +1,6 @@
-module.exports = {
+import type { CodegenConfig } from '@graphql-codegen/cli'
+
+const config: CodegenConfig = {
   overwrite: true,
   generates: {
     [`${__dirname}/generated/graphql.dart`]: {
@@ -10,3 +12,4 @@ module.exports = {
     },
   },
 }
+export default config

@@ -30,7 +30,7 @@ for (const { name, server, clients } of tests) {
       }
     }
     await $`npm run build`
-    await $`graphql-codegen --config ${__dirname}/client/graphql.codegen.js`
+    await $`graphql-codegen --config ${__dirname}/client/graphql.codegen.ts`
     await $`dart format test/client/generated`
     for (const client of clients) {
       await $`dart test ${client}`
