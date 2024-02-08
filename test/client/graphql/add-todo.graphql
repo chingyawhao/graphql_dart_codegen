@@ -1,0 +1,38 @@
+mutation AddToDo($title: String!, $text: String!) {
+  addToDo(title: $title, text: $text, files: []) {
+    id
+    title
+    text
+    files {
+      id
+      name
+      url
+    }
+  }
+}
+
+mutation AddToDoFile($title: String!, $text: String!, $file: Upload!) {
+  addToDo(title: $title, text: $text, files: [$file]) {
+    id
+    title
+    text
+    files {
+      id
+      name
+      url
+    }
+  }
+}
+
+mutation AddToDoFiles($title: String!, $text: String!, $files: [Upload!]!) {
+  addToDo(title: $title, text: $text, files: $files) {
+    id
+    title
+    text
+    files {
+      id
+      name
+      url
+    }
+  }
+}

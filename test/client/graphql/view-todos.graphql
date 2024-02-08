@@ -1,0 +1,12 @@
+query ViewToDo {
+  displayToDos {
+    id
+    title
+    text
+    files {
+      id
+      name
+      url
+    }
+  }
+}

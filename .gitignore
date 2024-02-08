@@ -1,0 +1,5 @@
+node_modules
+dist
+.dart_tool/
+generated/
+test/server/public/

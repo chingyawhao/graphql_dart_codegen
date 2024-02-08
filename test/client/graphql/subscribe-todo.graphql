@@ -1,0 +1,8 @@
+subscription SubscribeToDo($id: ID!) {
+  subscribeToDoChanges(id: $id) {
+    id
+    title
+    text
+    done
+  }
+}

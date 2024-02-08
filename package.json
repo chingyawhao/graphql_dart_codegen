@@ -1,0 +1,38 @@
+{
+  "name": "graphql_dart_codegen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "zx test/test.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/visitor-plugin-common": "^4.1.1",
+    "graphql": "^16.8.1"
+  },
+  "devDependencies": {
+    "@apollo/server": "^4.10.0",
+    "@as-integrations/koa": "^1.1.1",
+    "@graphql-tools/schema": "^10.0.2",
+    "@koa/cors": "^5.0.0",
+    "@types/koa__cors": "^5.0.0",
+    "@types/koa-bodyparser": "^4.3.12",
+    "@types/koa-static": "^4.0.4",
+    "@types/mime-types": "^2.1.4",
+    "chalk": "^5.3.0",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-upload": "^16.0.2",
+    "graphql-ws": "^5.14.3",
+    "koa": "^2.15.0",
+    "koa-bodyparser": "^4.4.1",
+    "koa-static": "^5.0.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
+    "ws": "^8.16.0",
+    "zx": "^7.2.3"
+  }
+}

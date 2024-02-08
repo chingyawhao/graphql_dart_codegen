@@ -1,0 +1,14 @@
+name: Testing
+on: [push]
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          npm install
+          dart pub get
+      - name: Run tests
+        run: npm run test

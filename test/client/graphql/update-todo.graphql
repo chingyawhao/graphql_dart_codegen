@@ -1,0 +1,17 @@
+mutation UpdateToDoText($id: ID!, $text: String!) {
+  updateToDo(id: $id, text: $text) {
+    id
+    title
+    text
+    done
+  }
+}
+
+mutation UpdateToDoDone($id: ID!) {
+  doneToDo(id: $id) {
+    id
+    title
+    text
+    done
+  }
+}
