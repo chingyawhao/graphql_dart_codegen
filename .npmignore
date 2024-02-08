@@ -1,0 +1,8 @@
+.dart_tool
+.github
+src
+test
+analysis_options.yaml
+pubspec.lock
+pubspec.yaml
+tsconfig.json
