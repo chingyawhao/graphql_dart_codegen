@@ -1,5 +1,6 @@
 .dart_tool
 .github
+node_modules
 src
 test
 analysis_options.yaml
