@@ -26,3 +26,29 @@ export default config
 ```
 
 ```npx graphql-codegen --config path_to/graphql.codegen.ts --verbose```
+
+# Example
+
+With the following GraphQL file
+```gql
+query ViewToDo {
+  displayToDos {
+    id
+    title
+    text
+    done
+  }
+}
+```
+
+You can use it like this
+```dart
+import './generated/graphql.dart';
+
+final graphqlSdk = GraphqlSdk(
+  http: 'http://server-url',
+  getToken: () async => 'Bearer token',
+);
+final todo = await graphqlSdk.ViewToDo();
+print(todo); // ViewToDo_Response_displayToDos
+```
