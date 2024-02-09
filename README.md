@@ -27,7 +27,7 @@ export default config
 
 ```npx graphql-codegen --config path_to/graphql.codegen.ts --verbose```
 
-# Example
+### Example
 
 With the following GraphQL file
 ```gql
